@@ -5,7 +5,8 @@ class Surat extends CI_Controller {
 
 	public function __construct()
 	{
-		parent::__construct();	
+		parent::__construct();
+		$this->load->model('Surat_model','dbase');	
 	}
 
 
@@ -22,7 +23,7 @@ class Surat extends CI_Controller {
 		if($this->input->post()){
 			$data = array (
 				
-				'No_So' => $this->input->post('no_so'),
+				'No_So' => $this->input->post('No_So'),
 				'Nama_Kapal' => $this->input->post('Nama_Kapal'),
 				'Jenis_Berkas' => $this->input->post('Jenis_Berkas'),
 				'Tanggal' => $this->input->post('Tanggal'),

@@ -3,25 +3,25 @@
 	<h2>Penginputan Data kapal </h2>
 	<br>
 	<div class="container">
-	<form>
+	<form action="<?= site_url('surat/created')?>" method="POST"> 
   <div class="form-group">
     <label>NAMA KAPAL</label>
-    <input class="form-control" id="" class="Nama_Kapal" value="" placeholder="Masukkan Nama Kapal" required>
+    <input class="form-control" id="" class="Nama_Kapal" name="Nama_Kapal" value="" placeholder="Masukkan Nama Kapal" required>
   </div>
   <br> 
   <div class="form-group">
-    <label for="exampleInputPassword1">NO SO</label>
-    <input class="form-control" id="No_SO" class="No_SO" value="" placeholder="Masukkan No SO" required>
+    <label >NO SO</label>
+    <input class="form-control" id="No_So" class="No_So" name="No_So" placeholder="Masukkan No SO" value="" required >
   </div>
   <br> 
   <div class="form-group">
-    <label for="exampleInputPassword1">JENIS BERKAS</label>
-    <input class="form-control" id="Jenis_Berkas" class="Jenis_Berkas" value="" required>
+    <label >JENIS BERKAS</label>
+    <input class="form-control" id="Jenis_Berkas" class="Jenis_Berkas" name="Jenis_Berkas" value="" required>
   </div>
   <br>
   <div class="form-group">
-    <label for="exampleInputPassword1">TANGGAL</label>
-    <input type="date" class="date" id="Tanggal" class="Tanggal" value=""  required>
+    <label>TANGGAL</label>
+    <input type="date" class="date" id="Tanggal" class="Tanggal" name="Tanggal" value=""  required>
   </div>
   <!-- <br>
   <div class="form-group">
@@ -30,7 +30,7 @@
   </div> -->
   
 <br>
-  <button type="submit" class="btn btn-primary" href=<?= site_url('surat/created')?>>Submit</button>
+  <button type="submit" class="btn btn-primary" href="">Submit</button>
 </form>
 
 	</div>
