@@ -3,25 +3,25 @@
 	<h2>Penginputan Data kapal </h2>
 	<br>
 	<div class="container">
-	<form action="<?= site_url('surat/created')?>" method="POST"> 
+	<form action="" method="POST"> 
   <div class="form-group">
     <label>NAMA KAPAL</label>
-    <input class="form-control" id="" class="Nama_Kapal" name="Nama_Kapal" value="" placeholder="Masukkan Nama Kapal" required>
+    <input class="form-control" id="" class="Nama_Kapal" name="Nama_Kapal" value="<?= set_value('Nama_Kapal',$record->Nama_Kapal);?>" placeholder="Masukkan Nama Kapal" required>
   </div>
   <br> 
   <div class="form-group">
     <label >NO SO</label>
-    <input class="form-control" id="No_So" class="No_So" name="No_So" placeholder="Masukkan No SO" value="" required >
+    <input class="form-control" id="No_So" class="No_So" name="No_So" placeholder="Masukkan No SO" value="<?= set_value('No_So',$record->No_So); ?>" required >
   </div>
   <br> 
   <div class="form-group">
     <label >JENIS BERKAS</label>
-    <input class="form-control" id="Jenis_Berkas" class="Jenis_Berkas" name="Jenis_Berkas" value="" required>
+    <input class="form-control" id="Jenis_Berkas" class="Jenis_Berkas" name="Jenis_Berkas" value="<?= set_value('Jenis_Berkas',$record->Jenis_Berkas); ?>" required>
   </div>
   <br>
   <div class="form-group">
     <label>TANGGAL</label>
-    <input type="date" class="date" id="Tanggal" class="Tanggal" name="Tanggal" value=""  required>
+    <input type="date" class="date" id="Tanggal" class="Tanggal" name="Tanggal" value="<?= set_value('Tanggal',$record->Tanggal); ?>"  required>
   </div>
   <!-- <br>
   <div class="form-group">
