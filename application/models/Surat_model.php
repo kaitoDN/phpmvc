@@ -8,10 +8,10 @@ class Surat_model extends CI_Model {
     public function get_new()
 {
     $record = new stdClass();
-    $record ->no_so = '';
-    $record ->Nama_Kapal = '';
-    $record ->Jenis_Berkas = '';
-    $record ->Tanggal = '';
+    $record->No_So = '';
+    $record->Nama_Kapal = '';
+    $record->Jenis_Berkas = '';
+    $record->Tanggal = '';
     // $record ->file_path = '';
     // $record ->id_surat = '';
     return $record;
